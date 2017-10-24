@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Main Styling -->
+  <link href="css/main.css" rel="stylesheet">
+
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.css" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+
+  <!-- Open Sans Font -->
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,500,600,700,900' rel='stylesheet' type='text/css'>
+
+</head>
+	<script src = "js/d3.min.js"></script>
+<body>
+
+  <nav id="sidebar-wrapper">
+    <ul class="sidebar">
+    </ul> <!-- End Sidebar -->
+  </nav> <!-- End Sidebar-wrapper -->
+
+  <header>
+    <div class="container-fluid">
+      <div class="row">
+        
+        <div class="col-md-6">
+          <a href="#"><img src="images/logo.png" class="logo"></a>
+          </a>
+        </div> <!-- End Logo & Menu-Toggle -->
+      </div> <!-- End Row -->
+    </div> <!-- End Container-Fluid -->
+  </header> <!-- End Header -->
+  <hr>
+  <hr>
+  <div class="container-fluid">
+		<h1></h1>
+		<br>
+		<h3>Atenciones en Procedimientos en Salud - Municipio de Medellín 2016</h3>
+		<div class="row">
+			<p style="color:red;">Qué es CUPS (Clasificacion Unica de Procedimientos de Salud)</p>
+			<p style="color:blue;">
+				Es un ordenamiento lógico y detallado de los procedimientos e intervenciones que se realizan en Colombia<br>
+				Tiene una estructura semántica para estandarizar la comunicación (Idioma y Concepto)<br><br>
+			</p>
+			<p style="color:red;">Estructura CUPS</p>
+			<p style="color:gray;">
+				Grupo : Zona anatómica para los procedimientos quirúrgicos. Ejemplo: Sistema Visual<br>
+				Sub-Grupo: Tipo de Procedimiento. Ejemplo: Procedimientos de Cornea<br>
+				Categoría: Descripción Genérica. Ejemplo: Transplante de Cornea<br>
+				Sub-Categoria: Descripción Detallada. Ejemplo: Queratoplastia Lamelar O Superficial<br>
+			</p>
+		</div>
+		<div class="row">
+		  <div class="single-channel">
+				<div class="col-md-3 channel-bio">
+						<div class="channel-name"><img src="images/pki_cups.png"><br><br>
+						<b>Total Atenciones en Procedimientos en Salud Categorizado por CUPS</b></div>
+							  <hr>
+							  <p style="font-size:150%">Atenciones por Genero</p>
+						</div>
+				</div><!-- End Channel-Bio -->
+				
+				<script src="//d3js.org/d3.v4.min.js"></script>
+				<div id="cups_general"></div>
+				<svg width="800" height="400"></svg>
+					<script src="js/cups_atencion.js"></script>	
+				<div class="col-md-3 channel-bio">
+					<div class="channel-name"><img src="images/pki_mujer.png">
+					<hr>
+				  <p></p>
+				  <a href="cups_mujer.html">Clasificación de las atenciones en salud para el Género Femenino</a>
+				  <br>
+				  <br>
+				  <img src="images/pki_hombre.jpg">
+				  <br>
+				  <a href="cups_hombre.html">Clasificación de las atenciones en salud para el Género Masculino</a> 
+				</div><!-- End Channel-Bio -->				
+		  </div> <!-- End Single Channel -->		  
+		</div> <!-- End Row -->
+	</div> <!-- End Container-Fluid -->	
+  <footer>    
+    <h4>Copyright &copy; 2017</h4>
+
+  </footer> <!-- End Footer -->
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="js/menu.js"></script>
+</body>
+
+</html>
