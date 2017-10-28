@@ -13,3 +13,4 @@ app.get('/', function(req, res) {
 app.listen(port, function () {
 	console.log('App listen in Port: ' + port);
 });
+//sugiero explicar un poco el tema de los procedimientos con etiquetas que indiquen su clasificación para cumplir con el objetivo de "las principales categorías de atención que refleja las principales enfermedades diagnosticadas"
